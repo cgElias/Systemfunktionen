@@ -1,0 +1,9 @@
+---
+- name: Ausfuehren von Systemfunktionen basierend auf Tag
+  hosts: test
+  become: true
+  # roles:
+  #   - { role: artifactory, tags: ["artifactory"] }
+  tasks:
+    - include_tasks: kafka/restart.yml
+      tags: kafka
