@@ -5,5 +5,5 @@
   # roles:
   #   - { role: artifactory, tags: ["artifactory"] }
   tasks:
-    - include_tasks: kafka/restart.yml
+    - include_tasks: ../kafka/restart.yml
       tags: kafka
