@@ -1,0 +1,7 @@
+---
+- name: Re-create the kafka instance
+  docker_container:
+    name: cg-itu-tp6-intern-kafka
+    image: confluentinc/cp-kafka:3.0.1
+    state: started
+    recreate: yes
